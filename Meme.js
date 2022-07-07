@@ -4,7 +4,7 @@ const meme = document.querySelector('#meme');
 //HTML to be inserted as generator works
 const topinput = "<input=text placeholder='Top Text' name='topText'>"
 const bottominput = "<input=text placeholder='Bottom Text' name='bottomText'>"
-const picdisplay = "<img = "+picinput.value+" alt='Your Meme'>>"
+const picdisplay = "<img = "+picinput.value+" alt='Your Meme'>"
 // use form action to run TextboxLocation function
     // **Done** TextboxLocation reads id of selected
     // Puts Gray box where text to be located
@@ -14,7 +14,7 @@ function TextboxLocation(){
     if (location == "Top"){
         const toptext = textinput.createElement("form")
         toptext.innerHTML = topinput
-
+        
         return;
     }
     if (location == "Bottom"){
@@ -34,8 +34,10 @@ function TextboxLocation(){
 function previewPic(){
     picinput = document.querySelector("#pic").value
     const pic = meme.createElement("image")
-    pic.innerHTML = 
+    pic.innerHTML = picdisplay
 }
+
+
 
 
 
