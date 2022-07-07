@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div >
+    <form action="return previewPic()">
+    <!-- URL Entry for Picture -->
+        <label for="pic">What's your background?</label><br>
+        <input type="text" id="pic" name="pic" placeholder="Paste URL here...">
+        <input type="submit" name="preview" value="Preview">
+    </form>
+    <!-- Locations of Meme Text -->
+    <form onclick="return textboxLocation()" id="text">
+        <p>Where do you want your text:</p>
+        <input type="radio" name="textLocation" value="Top">
+        <label for="Top">Top</label><br>
+        <input type="radio" name="textLocation" value="Bottom">
+        <label for="Bottom">Bottom</label><br>
+        <input type="radio" name="textLocation" value="Both">
+        <label for="Both">Both</label>
+    </form>
+    <!-- location of forms for Text input -->
+    <div id="textInput"></div>
+    </div>
+    <!-- Generate Meme button -->
+    <form action="return generateMeme()">
+        <input type="Submit" value="Generate Meme">
+    </form>
+    <br>
+    
+    <!-- Page Break -->
+    <hr>
+    <!-- Meme Creation Area -->
+    <div class="meme">
 
+    </div>
+<hr>
+
+</body>
+<script src="meme.js"></script>
+</html>
