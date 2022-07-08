@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div >
-    <form class="form-inline" action="return previewPic()">
+    <div id="memeinput">
+    <form class="form-inline" action=""><!--action="return previewPic()"-->
     <!-- URL Entry for Picture -->
         <label for="pic">What's your background?</label><br>
         <input type="text" id="pic" name="pic" placeholder="Paste URL here...">
@@ -24,22 +24,28 @@
             <option value="Both">Both</option>
         </select>
     </form>
+    <!-- Text Size Slider -->
     <form class="form-inline" action="" id="textSize">
         <label for="textsize">Text Size: </label>
         <input type="range" min="12" max="180" name="textsize">
     </form>
-    <form class="fomr-inline">
+    <!-- Text Color Wheel -->
+    <form class="form-inline">
         <label for="textcolor">Text Color: </label>
         <input type="color" name="textcolor">
             </form>
     <br>
+    <!-- Attempt at building separate preview panel -->
+    <img class="preview" action="return preview()" alt="Preview">
     <!-- location of forms for Text input -->
     <div id="textInput"></div>
     </div>
+
     <!-- Generate Meme button -->
     <form class="form-inline" action="return generateMeme()">
         <input type="Submit" value="Generate Meme">
     </form>
+    
     <hr>
     <!-- Meme Creation Area -->
     <div class="meme">
