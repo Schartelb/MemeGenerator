@@ -1,3 +1,26 @@
 .meme{
     
 }
+
+.form-inline{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.form-inline label{
+    margin: 1px;
+}
+
+.form-inline button:hover{
+    background-color:olive;
+}
+
+.form-inline input[type=button]{
+    width: 100%;
+    background-color:#04AA6d;
+    color:whitesmoke;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10 px;
+}

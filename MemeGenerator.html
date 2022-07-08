@@ -9,27 +9,26 @@
 </head>
 <body>
     <div >
-    <form action="return previewPic()">
+    <form class="form-inline" action="return previewPic()">
     <!-- URL Entry for Picture -->
         <label for="pic">What's your background?</label><br>
         <input type="text" id="pic" name="pic" placeholder="Paste URL here...">
         <input type="submit" name="preview" value="Preview">
     </form>
     <!-- Locations of Meme Text -->
-    <form onclick="return textboxLocation()" id="text">
+    <form class="form-inline" onclick="return textboxLocation()" id="text">
         <p>Where do you want your text:</p>
-        <input type="radio" name="textLocation" value="Top">
-        <label for="Top">Top</label><br>
-        <input type="radio" name="textLocation" value="Bottom">
-        <label for="Bottom">Bottom</label><br>
-        <input type="radio" name="textLocation" value="Both">
-        <label for="Both">Both</label>
+        <select id="text" name="text">
+            <option value="Top">Top</option>
+            <option value="Bottom">Bottom</option>
+            <option value="Both">Both</option>
+        </select>
     </form>
-    <form action="" id="textSize">
+    <form class="form-inline" action="" id="textSize">
         <label for="textsize">Text Size: </label>
         <input type="range" min="12" max="180" name="textsize">
     </form>
-    <form>
+    <form class="fomr-inline">
         <label for="textcolor">Text Color: </label>
         <input type="color" name="textcolor">
             </form>
@@ -38,11 +37,9 @@
     <div id="textInput"></div>
     </div>
     <!-- Generate Meme button -->
-    <form action="return generateMeme()">
+    <form class="form-inline" action="return generateMeme()">
         <input type="Submit" value="Generate Meme">
     </form>
-    <br>
-        <!-- Page Break -->
     <hr>
     <!-- Meme Creation Area -->
     <div class="meme">
