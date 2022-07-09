@@ -9,46 +9,40 @@
 </head>
 <body>
     <div id="memeinput">
-    <form class="form-inline" action=""><!--action="return previewPic()"-->
+    <form class="form-inline">
     <!-- URL Entry for Picture -->
-        <label for="pic">What's your background?</label><br>
+        <label for="pic">What's your background?</label>
         <input type="text" id="pic" name="pic" placeholder="Paste URL here...">
-        <input type="submit" name="preview" value="Preview">
-    </form>
+        <input onclick="placepicture()" value="Load">
+    <!-- Text Size Slider -->
+        
+    <label for="textsize">Text Size: </label>
+    <input id="textSize" type="range" min="12" max="180" name="textsize">
+
+<!-- Text Color Wheel -->
+
+    <label for="textcolor">Text Color: </label>
+    <input id="textcolor" type="color" name="textcolor">
+        </form>
+
     <!-- Locations of Meme Text -->
-    <form class="form-inline" onclick="return textboxLocation()" id="text">
-        <p>Where do you want your text:</p>
-        <select id="text" name="text">
-            <option value="Top">Top</option>
-            <option value="Bottom">Bottom</option>
-            <option value="Both">Both</option>
+    <form class="form-inline">    
+    <label id="text">Where do you want your text:</label>
+           <form name="text">
+            <input type="text" name="top" id="top" placeholder="Top Text">
+            <input type="text" name="bottom" id="bottom" placeholder="Bottom Text">
+            </form>  
         </select>
     </form>
-    <!-- Text Size Slider -->
-    <form class="form-inline" action="" id="textSize">
-        <label for="textsize">Text Size: </label>
-        <input type="range" min="12" max="180" name="textsize">
-    </form>
-    <!-- Text Color Wheel -->
-    <form class="form-inline">
-        <label for="textcolor">Text Color: </label>
-        <input type="color" name="textcolor">
-            </form>
-    <br>
-    <!-- Attempt at building separate preview panel -->
-    <img class="preview" action="return preview()" alt="Preview">
-    <!-- location of forms for Text input -->
-    <div id="textInput"></div>
-    </div>
-
+    
     <!-- Generate Meme button -->
-    <form class="form-inline" action="return generateMeme()">
-        <input type="Submit" value="Generate Meme">
-    </form>
+    <!-- <form class="generate" id="generate">
+        <input type="submit" value="Generate Meme">
+    </form> -->
     
     <hr>
     <!-- Meme Creation Area -->
-    <div class="meme">
+    <div id="meme" class="meme">
 
     </div>
 </body>
