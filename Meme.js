@@ -10,9 +10,13 @@ const picdisplay = "<img src="+ picinput.value +" class='meme' alt='Your Meme'>"
 const toptext = document.querySelector("#top")
 const bottomtext = document.querySelector("#bottom")
 
-meme.addEventListener("load",function(){
-    JSON.parse(localStorage('picURL','imgHTML'))
-    meme.innerHTML=imgHTML
+window.addEventListener("load",function(){
+    let memeinnerHTML = this.localStorage.getItem('imgHTML')
+    meme.innerHTML=memeinnerHTML
+    let picURL = this.localStorage.getItem('picURL')
+    picinput.value = picURL
+
+    
 })
 function TextboxLocation(){
     if(bottomtext.value === "" ){ //outputs top text only
