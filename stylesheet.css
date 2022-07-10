@@ -1,9 +1,13 @@
 .meme{
     position: relative;
-    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .form-inline{
+    min-width: 850px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;

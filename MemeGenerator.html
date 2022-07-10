@@ -23,16 +23,16 @@
 
     <label for="textcolor">Text Color: </label>
     <input id="textcolor" type="color" name="textcolor">
-        </form>
+    
 
     <!-- Locations of Meme Text -->
-    <form class="form-inline">    
+    <div>
     <label id="text">Where do you want your text:</label>
-           <form name="text">
             <input type="text" name="top" id="top" placeholder="Top Text">
             <input type="text" name="bottom" id="bottom" placeholder="Bottom Text">
-            </form>  
+              
         </select>
+    </div>
     </form>
     
     <!-- Generate Meme button -->
@@ -42,9 +42,9 @@
     
     <hr>
     <!-- Meme Creation Area -->
-    <div id="meme" class="meme">
-
-    </div>
+    <canvas id="meme" class="meme" a="Your Meme">
+    </canvas>
+    <img class="meme" id="clearmeme">
 </body>
 <script src="meme.js"></script>
 </html>
