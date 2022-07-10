@@ -6,6 +6,14 @@
 
 }
 
+.clearmeme{
+    opacity:.1;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
 .form-inline{
     min-width: 850px;
     display: flex;

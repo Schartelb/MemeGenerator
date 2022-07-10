@@ -1,8 +1,7 @@
 const picinput = document.querySelector("#pic");
 const textinput = document.querySelector("#textInput");
-const preview = document.querySelector("#memeinput");
-const meme = document.querySelector('#meme');
-const clearmeme = document.querySelector("#clearmeme")
+const meme = document.querySelector('#clearmeme');
+const clearmeme =document.querySelector('#clearmeme');
 const form = document.querySelector('form')
 form.addEventListener("submit",placepicture)
 
@@ -14,14 +13,14 @@ toptext.addEventListener("keyup",topType)
 const bottomtext = document.querySelector("#bottom")
 bottomtext.addEventListener("Change",bottomType)
 
-window.addEventListener("load",function(){
-    let memeinnerHTML = this.localStorage.getItem('imgHTML')
-    meme.innerHTML=memeinnerHTML
-    let picURL = this.localStorage.getItem('picURL')
-    picinput.value = picURL
+//window.addEventListener("load",function(){
+ //   let memeinnerHTML = this.localStorage.getItem('imgHTML')
+//    meme.innerHTML=memeinnerHTML
+//    let picURL = this.localStorage.getItem('picURL')
+//    picinput.value = picURL
+//})
 
-    
-})
+
 function topType(){
     console.log(this.value)
     bannertop=this.value;
@@ -52,10 +51,12 @@ function TextboxLocation(){
 
 function placepicture(p){
     p.preventDefault()
-    let ctx = meme.getContext('2d')
-    clearmeme.setAttribute('width',newImage.width)
-    clearmeme.setAttribute('height',newImage.height)
-    ctx.drawImage(Image,10,10);
+    clearmeme.src=picinput.value
+    clearmeme.setAttribute("width",clearmeme.width)
+    clearmeme.setAttribute("height",clearmeme.height)
+    
+//    let ctx = meme.getContext('2d')
+//    ctx.drawImage(Image,10,10);
 }
 
 function Creatememe(){ //puts everything together to create Meme
