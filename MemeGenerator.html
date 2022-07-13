@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="memeinput">
+    <div>
     <form class="form-inline">
     <!-- URL Entry for Picture -->
         <label for="pic">What's your background?</label>
@@ -34,7 +34,7 @@
         </select>
     </div>
     </form>
-    
+</div>
     <!-- Generate Meme button -->
     <!-- <form class="generate" id="generate">
         <input type="submit" value="Generate Meme">
@@ -42,9 +42,14 @@
     
     <hr>
     <!-- Meme Creation Area -->
-    <canvas id="meme" class="meme" a="Your Meme">
-    </canvas>
-    <img class="clearmeme" id="clearmeme" >
+    <!-- <canvas id="meme" class="meme" a="Your Meme">
+    </canvas> -->
+    <div class="meme">
+    <img id="meme" >
+    <div class="toptext" id="toptext" style="color:white"></div>
+    <div class="bottomtext" id="bottomtext" style="color:white"></div>
+    </div>
+
 </body>
 <script src="meme.js"></script>
 </html>
