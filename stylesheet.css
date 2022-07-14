@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    text-align: center;
+    
 
 }
 
@@ -47,7 +47,7 @@
 
 .bottomtext{
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-25%,-25%);
     left: 50%;
     bottom: 20px;
     font-family: impact;
@@ -67,7 +67,7 @@
 
 .toptext{
     position:absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-25%,-25%);
     left: 50%;
     top: 20px;
     font-family: impact;
