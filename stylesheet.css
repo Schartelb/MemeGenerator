@@ -1,8 +1,7 @@
 .meme{
-    position: relative;
-    background-attachment: fixed;
+    position: absolute;
     text-align: center;
-    min-width:400px;
+    min-width:850px;
     background-repeat:no-repeat;
 }
 
