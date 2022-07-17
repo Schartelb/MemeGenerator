@@ -1,10 +1,9 @@
 .meme{
     position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
-
+    min-width:400px;
+    background-repeat:no-repeat;
 }
 
 /* .clearmeme{
@@ -47,9 +46,9 @@
 
 .bottomtext{
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-25%,-25%);
     left: 50%;
-    bottom: 20px;
+    bottom: 10px;
     font-family: impact;
     font-size: 2.5em;
     text-transform: uppercase;
@@ -67,9 +66,9 @@
 
 .toptext{
     position:absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-25%,-25%);
     left: 50%;
-    top: 20px;
+    top: 10px;
     font-family: impact;
     font-size: 2.5em;
     text-transform: uppercase;
