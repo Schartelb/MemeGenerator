@@ -1,9 +1,14 @@
 .meme{
     position: relative;
     background-attachment: fixed;
+<<<<<<< HEAD
     text-align: center;
     min-width:400px;
     background-repeat:no-repeat;
+=======
+    
+
+>>>>>>> 98b3a07a051b5201c99f4302bff6573854b85b06
 }
 
 /* .clearmeme{
