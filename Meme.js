@@ -15,6 +15,7 @@ form.addEventListener("submit",function(p){
     }else{
         flatten()
         placepicture(p)
+        picinput.value = ""
     }
 })
 
@@ -32,7 +33,6 @@ toptext.addEventListener("keyup",topType)
 function topType(){
     const bannertop = document.querySelector("#toptext")
     bannertop.innerHTML=this.value;
-    console.log(bannertop.clientHeight)
     // textResize()
 }
 
@@ -45,7 +45,7 @@ function bottomType(){
 }
 
 function bottomtextResize(bannerbottom){
-    console.log(bannerbottom.clientWidth)
+    // console.log(bannerbottom.length)
     return
 }
 
@@ -61,7 +61,6 @@ function bottomtextResize(bannerbottom){
     // img.setAttribute("class","meme")
     // img.style.cssText += 'width:'+img.clientWidth+'px;height:'+img.clientHeight+'px;'
     const newdiv = document.getElementById("meme")
-    picinput.value=""
     newtopdiv(newdiv)
     newbottomdiv(newdiv)
 }
@@ -73,10 +72,11 @@ function flatten(){
     const flatTop = document.querySelector("#toptext");
     flatTop.setAttribute("class","flattop")
     flatTop.setAttribute("id","")
+    toptext.value = ""
     const flatBot = document.querySelector("#bottomtext");
     flatBot.setAttribute("class","flatbottom")
     flatBot.setAttribute("id","")
-    const bottom = document.querySelector("top")
+    bottomtext.value = ""
 }
 
 function createdivbox(){
