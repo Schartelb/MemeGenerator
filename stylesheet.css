@@ -1,8 +1,16 @@
 .meme{
-    position: absolute;
+    position: relative;
     text-align: center;
     min-width:850px;
     background-repeat:no-repeat;
+    background-position: center;
+}
+.flat{
+    position: relative;
+    text-align: center;
+    min-width:850px;
+    background-repeat:no-repeat;
+    background-position: center;
 }
 
 /* .clearmeme{
@@ -45,8 +53,9 @@
 
 .bottomtext{
     position: absolute;
-    transform: translate(-25%,-25%);
-    left: 50%;
+    color:white;
+    transform: translate(-40%,-40%);
+    left: 45%;
     bottom: 10px;
     font-family: impact;
     font-size: 2.5em;
@@ -65,9 +74,54 @@
 
 .toptext{
     position:absolute;
-    transform: translate(-25%,-25%);
-    left: 50%;
-    top: 10px;
+    transform: translate(-40%,-40%);
+    left: 45%;
+    top: 20px;
+    color: white;
+    white-space: nowrap;
+    font-family: impact;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow:2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 2px 5px #000;
+  }
+
+  .flatbottom{
+    position: absolute;
+    color:white;
+    transform: translate(-40%,-40%);
+    left: 45%;
+    bottom: 10px;
+    font-family: impact;
+    font-size: 2.5em;
+    text-transform: uppercase;
+     letter-spacing: 1px;
+    text-shadow:2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0px 2px 0 #000,
+    2px 0px 0 #000,
+    0px -2px 0 #000,
+    -2px 0px 0 #000,
+    2px 2px 5px #000;
+  }
+
+.flattop{
+    position:absolute;
+    transform: translate(-40%,-40%);
+    left: 45%;
+    top: 20px;
+    color: white;
+    white-space: nowrap;
     font-family: impact;
     font-size: 2.5em;
     text-transform: uppercase;
